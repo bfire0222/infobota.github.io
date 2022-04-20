@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open sans", sans-serif;
+}
+
+
+.contact-page {
+	width: 100%;
+	max-width: 1400px;
+	padding: 50px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+h2{
+	font: normal 100% 'trebuchet ms', sans-serif; 
+	width: 60%;
+	margin-bottom: 80px;
+	text-transform: uppercase;
+	color: #3494db;
+	font-size: 60px;
+}
+
+.contact-info, .contact-from{
+	flex: 1;
+}
+
+.item{
+	margin-bottom: 24px;
+	font-size: 16px;
+	color: #322;
+}
+
+.icon{
+	width: 50px;
+	height: 50px;
+	line-height: 20px;
+	background-color: #3494db;
+	text-align: center;
+	color: #fff;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.contact-from{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.textb{
+	width: calc(50% - 10px);
+	height: 50px;
+	padding: 12px;
+	background-color: #222;
+	border: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+textarea{
+	width: 100%;
+	min-height: 200px;
+	max-height: 400px;
+	resize: vertical;
+	padding: 12px;
+	background-color: #222;
+	border: none;
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.btn{
+	width: 120px;
+	height: 40px;
+	margin-left: auto;
+	background-color: #3494db;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	border: 2px solid #3494db;
+	transition: .3s linear;
+}
+
+.btn:hover{
+	background-color: transparent;
+	color: #3494db;
+}
+
+@media screen and (max-width: 980px){
+	.contact-page{
+		max-width: 800px;
+	}
+	h2{
+		font-size: 40px;
+		margin-bottom: 40px;
+	}
+
+	.contact-info, .contact-from{
+		flex: 100%;
+		margin-bottom: 30px;
+	}
+	.textb{
+		width: 100%;
+	}
+}
